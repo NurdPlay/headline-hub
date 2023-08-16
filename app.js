@@ -7,8 +7,7 @@ const searchButton = document.getElementById("search-button");
 
 // Function to fetch news articles from GNews API
 async function fetchNews(searchTerm = "") {
-
-    const apiKey = f705b9d0552a5d80e0619b45471f71ea;
+    const apiKey = "f705b9d0552a5d80e0619b45471f71ea";
     let apiUrl = `https://gnews.io/api/v4/top-headlines?token=${apiKey}&lang=en`;
 
     if (searchTerm) {
