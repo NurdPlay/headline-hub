@@ -7,7 +7,8 @@ const searchButton = document.getElementById("search-button");
 
 // Function to fetch news articles from GNews API
 async function fetchNews(searchTerm = "") {
-    require('dotenv').config(); // Load variables from .env file
+    import { config } from 'dotenv';
+    config();
     const apiKey = process.env.API_KEY;
     let apiUrl = `https://gnews.io/api/v4/top-headlines?token=${apiKey}&lang=en`;
 
